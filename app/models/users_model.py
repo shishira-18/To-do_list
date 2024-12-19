@@ -16,4 +16,3 @@ class User(base):
     password = Column(String(255))  # Added length specification
     role = Column(SqlaclchemyEnum(Role))
     tasks = relationship("Task", back_populates="user")
-    
